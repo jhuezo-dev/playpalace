@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+
+    --colors-light: #ffffff;
+    --colors-almostlight: #F6F6F6;
+    --colors-lightergray: #ECECEC;
+    --colors-lightgray: #e0e0e0;
+    --colors-gray: #bbbbbb;
+    --colors-darkgray: #858585;
+    --colors-darkergray: #666666;
+    --colors-dark: #333333;
+    --colors-darker: #222222;
+    --colors-darkest: #111111;
+    --colors-blue: #0C76B5;
+    --colors-green: #9DBD34;
+    --colors-yellow: #FEBA13;
+    --colors-red: #CE1E24;
+    --colors-lightblue: #56B4ED;
+    --colors-lightgreen: #CEEC6C;
+    --colors-lightyellow: #FFE5A4;
+    --colors-lightred: #FDA5A8;
+  
+    
+    --font-primary: 'Nerko One', sans-serif;
+    --font-secondary: 'Roboto Condensed', sans-serif;
+    --font-condensed: 'Fira Sans Condensed', sans-serif;  
+  
+    --text-dark: var(--colors-dark);
+    --text-gray: var(--colors-darkgray);
+    --text-light: var(--colors-light);
+  
+    --primary: var(--colors-blue);
+    --primary-dark: var(--colors-yellow);
+    --link-color: var(--primary);
+  
+    --loading-light: var(--colors-blue);
+    --loading-dark: var(--colors-yellow); 
+  
+    // Hex % 
+    // 25%: 40
+    // 50%: 80
+    // 75%: BF
+    // 80%: CC
+    // 85%: D9
+    // 90%: E6
+    --colors-content_bg: #ECECECCC;
+    --colors-content_bg_dark: #333333CC;
+  
+    --bg: var(--colors-almostlight);
+    --navbar_bg: var(--colors-content_bg);
+    --navbar_bg_secondary: #F6F6F6BF;
+    --navbar_active: var(--colors-blue);
+  
+    --bg_dark: var(--colors-darker);
+    --navbar_bg_dark: var(--colors-content_bg_dark);
+    --navbar_bg_secondary_dark: #222222BF;
+    --navbar_active_dark: var(--colors-yellow);
+  
+  
+    --scrollbar: var(--navbar_bg_secondary);
+    --scrollbar-dark: var(--navbar_bg_secondary_dark);
+    --scrollbar-hover: var(--colors-light);
+    --scrollbar-hover-dark: var(--colors-darkergray);
+  }
+
+body {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--colors-dark);
+  padding: 0;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.btn {
+  border-radius: 16px;
+  padding: 4px;
+  
+}
