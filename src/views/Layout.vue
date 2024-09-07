@@ -70,6 +70,7 @@ const generalStore = useGeneralStore();
   padding: 0px;
   overflow-y: auto;
   height: 100vh;
+  margin-bottom: 6px;
 }
 
 .nav_collapsed {

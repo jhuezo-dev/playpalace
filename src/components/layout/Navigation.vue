@@ -24,7 +24,7 @@
             :collapsed="generalStore.nav_collapsed"
             @click="closeMobileMenu"
           >
-            <svg-icon type="mdi" :path="mdiHome" :size="20"></svg-icon>
+            <svg-icon  type="mdi" :path="mdiHome" :size="20"></svg-icon>
           </nav-item>
 
           <nav-item

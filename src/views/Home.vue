@@ -1,7 +1,7 @@
 <template>
-  <div class="relative flex-wrap h-auto">
+  <div class="relative ">
     <img class="object-cover w-full h-52 max-h-52" src="../assets/Play-area-6.webp" alt="Play area with slide, kitchen, horse, and house">
-    <div class="px-4 pb-6 md:mx-6 md:px-6 lg:mx-16 lg:px-16">
+    <div class="mb-8 px-4 pb-12 md:mx-6 md:px-6 lg:mx-8 lg:px-8">
       <div class="text-center my-6 relative">
         <div class="text-6xl">Welcome to Play Palace Alaska</div>
           <p
@@ -29,7 +29,7 @@
           <div class="card-body">Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor inceptos molestie mauris rutrum aptent elementum aptent ad? Egestas orci semper aenean lacinia dictum accumsan; et viverra.</div>
           <!-- <div class="card-footer"></div> -->
           <div class="card-footer">
-            <a href="/pricing">Birthday party packages</a>
+            <a href="/pricing">Pricing</a>
           </div>
          </div>
          <div class="card md:max-w-md lg:max-w-lg">
@@ -77,11 +77,11 @@
   
   .card-body, .card-footer {
     background-color: var(--colors-content_bg);
-    border-radius: 0 0 8px 8px;
     padding: 6px 8px;
   }
-
+  
   .card-footer {
+    border-radius: 0 0 8px 8px;
     display: flex;
     font-size: 28px;
 
