@@ -12,3 +12,13 @@ export const WelcomeCardFourBodyText = `If you have any further questions, comme
 
 
 /* About page */
+export const AboutTitle = `Rules, safety, and Sanitation`
+export const AboutSubtitle = `We value your little ones safety so we have laid out our expectations to keep our palace enjoyable for all`
+
+/* Pricing page */
+export const PricingTitle = `Pricing Packages`
+export const PricingSubtitle = `For all your littles ones events, we have you covered`
+
+/* Gallery page */
+export const GalleryTitle = `Take a look into our Palace`
+export const GallerySubtitle = ``
