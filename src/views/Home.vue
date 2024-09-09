@@ -15,6 +15,7 @@
           {{WelcomeSubtitle}}
         </p>
       </div>
+
       <div class="flex flex-column flex-wrap gap-6 justify-center w-full">
         <div class="card md:max-w-md lg:max-w-lg">
           <div class="card-img">
@@ -75,6 +76,63 @@
           </div>
         </div>
       </div>
+
+      <div class="flex justify-center gap-6 mt-6">
+        <img src="../assets/location.png" alt="Play Palace map location">
+
+        <div>
+          <div class="flex flex-col">
+            <div class="text-3xl">{{ WelcomeName }}</div>
+            <div class="text-xl">{{ WelcomeAddress }}</div>
+          </div>
+  
+          <div class="flex flex-col">
+            <div class="text-3xl">{{ WelcomeHours }}</div>
+            <div class="text-xl">
+              {{ WelcomeDayMon }}
+            </div>
+            <div class="time">
+              {{ WelcomeDayMonTime }}
+            </div>
+            <div class="text-xl">
+              {{ WelcomeDayTue }}
+            </div>
+            <div class="time">
+              {{ WelcomeDayTueTime }}
+            </div>
+            <div class="text-xl">
+              {{ WelcomeDayWed }}
+            </div>
+            <div class="time">
+              {{ WelcomeDayWedTime }}
+            </div>
+            <div class="text-xl">
+              {{ WelcomeDayThu }}
+            </div>
+            <div class="time">
+              {{ WelcomeDayThuTime }}
+            </div>
+            <div class="text-xl">
+              {{ WelcomeDayFri }}
+            </div>
+            <div class="time">
+              {{ WelcomeDayFriTime }}
+            </div>
+            <div class="text-xl">
+              {{ WelcomeDaySat }}
+            </div>
+            <div class="time">
+              {{ WelcomeDaySatTime }}
+            </div>
+            <div class="text-xl">
+              {{ WelcomeDaySun }}
+            </div>
+            <div class="time">
+              {{ WelcomeDaySunTime }}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -91,6 +149,23 @@ import {
   WelcomeCardThreeBodyText,
   WelcomeCardFourLinkText,
   WelcomeCardFourBodyText,
+  WelcomeName,
+  WelcomeAddress,
+  WelcomeHours,
+  WelcomeDayMon,
+  WelcomeDayMonTime,
+  WelcomeDayTue,
+  WelcomeDayTueTime,
+  WelcomeDayWed,
+  WelcomeDayWedTime,
+  WelcomeDayThu,
+  WelcomeDayThuTime,
+  WelcomeDayFri,
+  WelcomeDayFriTime,
+  WelcomeDaySat,
+  WelcomeDaySatTime,
+  WelcomeDaySun,
+  WelcomeDaySunTime,
 } from "../constants";
 </script>
 
