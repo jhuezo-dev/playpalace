@@ -44,5 +44,5 @@ export const GallerySubtitle = `From ballpits to playhouses, we have it all to e
 /* Contact page */
 export const ContactTitle = `Questions, comments or concerns`
 export const ContactSubtitle = `Feel free to contact us and we'll get back to you as soon as possible`
-export const ContactEmail = `test@test.com`
+export const ContactEmail = `playpalacealaska@gmail.com`
 export const ContactPhone = `(907)802-7989`

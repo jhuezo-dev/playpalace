@@ -16,10 +16,10 @@
         </p>
       </div>
 
-      <div class="flex gap-4 justify-center">
-        <div class="text-3xl">{{ ContactEmail }}</div>
-        <div class="text-4xl">|</div>
-        <div class="text-3xl">{{ ContactPhone }}</div>
+      <div class="flex flex-col align-center md:flex-row lg:flex-row xl:flex-row gap-4 justify-center">
+        <div class="text-3xl"><a :href="`mailto:${ContactEmail}`">{{ ContactEmail }}</a></div>
+        <div class="text-4xl hidden md:block lg:block xl:block">|</div>
+        <div class="text-3xl"><a :href="`tel:${ContactPhone}`">{{ ContactPhone }}</a></div>
       </div>
     </div>
   </div>
