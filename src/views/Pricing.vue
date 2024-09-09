@@ -16,8 +16,8 @@
         </p>
       </div>
 
-      <div class="flex flex-column mx-auto w-full px-4 md:px-0 lg:px-0 lg:max-w-lg xl:max-w-3xl">
-        <img src="../assets/info-chart.JPG" alt="Play Palace Pricing list">
+      <div class="flex flex-column justify-center mx-auto w-full px-4 md:px-0 lg:px-0 lg:max-w-lg xl:max-w-3xl">
+        <img src="../assets/Prices.jpg" alt="Play Palace Pricing list">
       </div>
     </div>
     
