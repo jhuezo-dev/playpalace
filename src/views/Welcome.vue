@@ -5,7 +5,7 @@
       src="../assets/Play-area-6.webp"
       alt="Play area with slide, kitchen, horse, and house"
     />
-    <div class="mb-8 px-4 pb-12 md:mx-6 md:px-6 lg:mx-8 lg:px-8">
+    <div class="mb-6 px-4 pb-12 md:px-10 lg:mx-8 lg:px-8">
       <div class="text-center my-6 relative">
         <div class="text-6xl">{{ WelcomeTitle }}</div>
         <p
@@ -77,58 +77,74 @@
         </div>
       </div>
 
-      <div class="flex justify-center gap-6 mt-6">
-        <img src="../assets/location.png" alt="Play Palace map location">
+      <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center gap-6 mt-6 md:mx-4">
+        <img class="max-w-80 md:max-w-96 lg:max-w-none xl:max-w-none" src="../assets/location.png" alt="Play Palace map location">
 
         <div>
-          <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start xl:justify-start xl:items-start">
             <div class="text-3xl">{{ WelcomeName }}</div>
             <div class="text-xl">{{ WelcomeAddress }}</div>
           </div>
   
-          <div class="flex flex-col">
+          <div class="flex flex-col justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start xl:justify-start xl:items-start">
             <div class="text-3xl">{{ WelcomeHours }}</div>
-            <div class="text-xl">
-              {{ WelcomeDayMon }}
-            </div>
-            <div class="time">
-              {{ WelcomeDayMonTime }}
-            </div>
-            <div class="text-xl">
-              {{ WelcomeDayTue }}
-            </div>
-            <div class="time">
-              {{ WelcomeDayTueTime }}
-            </div>
-            <div class="text-xl">
-              {{ WelcomeDayWed }}
-            </div>
-            <div class="time">
-              {{ WelcomeDayWedTime }}
-            </div>
-            <div class="text-xl">
-              {{ WelcomeDayThu }}
-            </div>
-            <div class="time">
-              {{ WelcomeDayThuTime }}
-            </div>
-            <div class="text-xl">
-              {{ WelcomeDayFri }}
-            </div>
-            <div class="time">
-              {{ WelcomeDayFriTime }}
-            </div>
-            <div class="text-xl">
-              {{ WelcomeDaySat }}
-            </div>
-            <div class="time">
-              {{ WelcomeDaySatTime }}
-            </div>
-            <div class="text-xl">
-              {{ WelcomeDaySun }}
-            </div>
-            <div class="time">
-              {{ WelcomeDaySunTime }}
+            <div class="flex flex-wrap gap-3 justify-center md:flex-col lg:flex-col xl:flex-col md:gap-1 lg:gap-1 xl:gap-1">
+              <div>
+                <div class="text-xl">
+                  {{ WelcomeDayMon }}
+                </div>
+                <div class="time">
+                  {{ WelcomeDayMonTime }}
+                </div>
+              </div>
+              <div>
+                <div class="text-xl">
+                  {{ WelcomeDayTue }}
+                </div>
+                <div class="time">
+                  {{ WelcomeDayTueTime }}
+                </div>
+              </div>
+              <div>
+                <div class="text-xl">
+                  {{ WelcomeDayWed }}
+                </div>
+                <div class="time">
+                  {{ WelcomeDayWedTime }}
+                </div>
+              </div>
+              <div>
+                <div class="text-xl">
+                  {{ WelcomeDayThu }}
+                </div>
+                <div class="time">
+                  {{ WelcomeDayThuTime }}
+                </div>
+              </div>
+              <div>
+                <div class="text-xl">
+                  {{ WelcomeDayFri }}
+                </div>
+                <div class="time">
+                  {{ WelcomeDayFriTime }}
+                </div>
+              </div>
+              <div>
+                <div class="text-xl">
+                  {{ WelcomeDaySat }}
+                </div>
+                <div class="time">
+                  {{ WelcomeDaySatTime }}
+                </div>
+              </div>
+              <div>
+                <div class="text-xl">
+                  {{ WelcomeDaySun }}
+                </div>
+                <div class="time">
+                  {{ WelcomeDaySunTime }}
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@
       src="../assets/Play-area-3.webp"
       alt="Play Palace rules list"
     />
-    <div class="mb-6 px-4 pb-12 md:px-8 lg:px-20 xl:px-64">
+    <div class="mb-6 px-4 pb-12 md:px-10 lg:px-20 xl:px-64">
       <div class="text-center my-6 relative">
         <div class="text-6xl">{{ AboutTitle }}</div>
         <p
