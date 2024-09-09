@@ -64,7 +64,7 @@
           <div class="card-img">
             <img
               class="w-full h-44 object-cover"
-              src="../assets/Rules-3.JPG"
+              src="../assets/Rules-3.jpg"
               alt="Play Palace infomation chart"
             />
           </div>
