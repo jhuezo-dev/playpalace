@@ -16,7 +16,7 @@
         </p>
       </div>
 
-      <div class="flex flex-column flex-wrap gap-6 justify-center w-full">
+      <div class="flex flex-col flex-wrap gap-6 justify-center w-full">
         <div class="card md:max-w-md lg:max-w-lg">
           <div class="card-img">
             <img
@@ -77,13 +77,13 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center gap-6 mt-6 md:mx-4">
+      <div class="flex flex-col mx-2 md:flex-row lg:flex-row xl:flex-row justify-center items-center gap-6 mt-6 md:mx-4">
         <img class="max-w-80 md:max-w-96 lg:max-w-none xl:max-w-none" src="../assets/location.png" alt="Play Palace map location">
 
         <div>
           <div class="flex flex-col justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start xl:justify-start xl:items-start">
             <div class="text-3xl">{{ WelcomeName }}</div>
-            <div class="text-xl">{{ WelcomeAddress }}</div>
+            <div class="text-xl text-center md:text-start">{{ WelcomeAddress }}</div>
           </div>
   
           <div class="flex flex-col justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start xl:justify-start xl:items-start">
