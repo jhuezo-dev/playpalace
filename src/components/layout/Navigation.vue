@@ -275,6 +275,62 @@ function closeMobileMenu() {
   }
 }
 
+// for phones landscape
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  .fullnavbar {
+    .nav_card {
+      .nav_wrapper {
+        // margin-top: 8px;
+        // padding-top: 8px;
+        width: -webkit-fit-available;
+        width: inherit;
+        height: calc(100vh - 140px);
+        overflow-y: auto;
+        
+        .nav_items {   
+          background-color: red;
+          padding: 12px 0;       
+          align-items: center;
+          overflow-y: auto;
+          overflow-x: hidden;
+          gap: 20px;
+          width: inherit;
+          height: inherit;
+        }
+
+      }
+
+      .bottom_wrapper {
+        display: none;
+      }
+    }
+  }
+
+  .nav_mini {
+
+    .nav_card {
+
+      .nav_wrapper {
+        width: 100px;
+      }
+
+      .nav_items {
+        width: inherit;
+        align-items: center;
+
+        .nav_link {
+          width: inherit;
+          justify-content: center;
+          height: 40px;
+          padding: 0;
+
+          
+        }
+      }
+    }
+  }
+}
+
 // for phones
 @media only screen and (max-width: 480px) {
   .fullnavbar {

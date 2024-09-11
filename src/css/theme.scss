@@ -68,13 +68,28 @@
     --scrollbar-hover-dark: var(--colors-darkergray);
   }
 
+html {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  height: -webkit-fill-available;
+  height: 100dvh;
+}
+
 body {
-  font-family: "Nerko One", cursive;
+  font-family: "Nerko One", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--colors-dark);
-  padding: 0;
-  margin: 0;
   line-height: 1.25;
 }
 

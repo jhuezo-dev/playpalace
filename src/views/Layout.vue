@@ -69,6 +69,7 @@ const generalStore = useGeneralStore();
 .content_bg {
   padding: 0px;
   overflow-y: auto;
+  scroll-behavior: smooth;
   height: 100vh;
   margin-bottom: 6px;
 }
@@ -82,14 +83,20 @@ const generalStore = useGeneralStore();
     grid-template-rows: 60px 1fr;
     grid-template-columns: 1fr;
   }
-
+  
   .content_wrapper {
-    height: calc(100vh - 60px);
+    height: calc(100dvh - 60px);
+    // height: 100%;
+    // height: -webkit-fill-available;
   }
-
+  
   .content_pane {
   }
-
+  .content_bg {
+    height: -webkit-fill-available;
+    height: 100dvh;
+    // height: 100%;
+  }
   
 }
 </style>
