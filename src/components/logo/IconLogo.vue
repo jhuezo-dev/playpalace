@@ -40,6 +40,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     transition: all ease 0.1s;
+    border-radius: 10px;
     /* border-radius: 60px 60px 0px 0px; */
   }
   </style>

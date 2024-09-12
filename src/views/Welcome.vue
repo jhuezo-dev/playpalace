@@ -7,16 +7,16 @@
     />
     <div class="mb-6 px-4 pb-12 md:px-10 lg:mx-8 lg:px-8">
       <div class="text-center my-6 relative">
-        <div class="text-6xl">{{ WelcomeTitle }}</div>
+        <div class="text-5xl md:text-6xl lg:text-6xl xl:text-6xl">{{ WelcomeTitle }}</div>
         <p
-          class="mt-0 py-6 line-height-5 font-bold text-xl text-center mx-auto text-seconadry"
+          class="mt-0 pt-6 line-height-5 font-bold text-xl md:text-2xl lg:text-2xl xl:text-2xl text-center mx-auto text-seconadry"
           style="max-width: 500px"
         >
           {{WelcomeSubtitle}}
         </p>
       </div>
 
-      <div class="flex flex-column flex-wrap gap-6 justify-center w-full">
+      <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row flex-wrap gap-6 justify-center w-full">
         <div class="card md:max-w-md lg:max-w-lg">
           <div class="card-img">
             <img
@@ -28,7 +28,7 @@
           <div class="card-body">
             {{WelcomeCardOneBodyText}}
           </div>
-          <div class="card-footer">
+          <div class="card-footer font-bold text-lg md:text-xl lg:text-xl xl:text-xl">
             <a href="/about">{{WelcomeCardOneLinkText}}</a>
           </div>
         </div>
@@ -43,7 +43,7 @@
           <div class="card-body">
             {{WelcomeCardTwoBodyText}}
           </div>
-          <div class="card-footer">
+          <div class="card-footer font-bold text-lg md:text-xl lg:text-xl xl:text-xl">
             <a href="/pricing">{{WelcomeCardTwoLinkText}}</a>
           </div>
         </div>
@@ -56,7 +56,7 @@
             />
           </div>
           <div class="card-body">{{WelcomeCardThreeBodyText}}</div>
-          <div class="card-footer">
+          <div class="card-footer font-bold text-lg md:text-xl lg:text-xl xl:text-xl">
             <a href="/gallery">{{WelcomeCardThreeLinkText}}</a>
           </div>
         </div>
@@ -71,19 +71,19 @@
           <div class="card-body">
             {{WelcomeCardFourBodyText}}
           </div>
-          <div class="card-footer">
+          <div class="card-footer font-bold text-lg md:text-xl lg:text-xl xl:text-xl">
             <a href="/contact"> <span>{{WelcomeCardFourLinkText}}</span></a>
           </div>
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-center items-center gap-6 mt-6 md:mx-4">
+      <div class="flex flex-col mx-2 md:flex-row lg:flex-row xl:flex-row justify-center items-center gap-6 mt-6 md:mx-4">
         <img class="max-w-80 md:max-w-96 lg:max-w-none xl:max-w-none" src="../assets/location.png" alt="Play Palace map location">
 
         <div>
           <div class="flex flex-col justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start xl:justify-start xl:items-start">
             <div class="text-3xl">{{ WelcomeName }}</div>
-            <div class="text-xl">{{ WelcomeAddress }}</div>
+            <div class="text-xl text-center md:text-start">{{ WelcomeAddress }}</div>
           </div>
   
           <div class="flex flex-col justify-center items-center md:justify-start md:items-start lg:justify-start lg:items-start xl:justify-start xl:items-start">
@@ -91,13 +91,13 @@
             <div class="flex flex-wrap gap-3 justify-center md:flex-col lg:flex-col xl:flex-col md:gap-1 lg:gap-1 xl:gap-1">
               <div>
                 <div class="text-xl">
-                  {{ WelcomeDayMon }}
+                  {{ WelcomeDayMon }} - {{ WelcomeDaySat }}
                 </div>
                 <div class="time">
                   {{ WelcomeDayMonTime }}
                 </div>
               </div>
-              <div>
+              <!-- <div>
                 <div class="text-xl">
                   {{ WelcomeDayTue }}
                 </div>
@@ -128,7 +128,7 @@
                 <div class="time">
                   {{ WelcomeDayFriTime }}
                 </div>
-              </div>
+              </div> 
               <div>
                 <div class="text-xl">
                   {{ WelcomeDaySat }}
@@ -136,13 +136,18 @@
                 <div class="time">
                   {{ WelcomeDaySatTime }}
                 </div>
-              </div>
+              </div>-->
               <div>
                 <div class="text-xl">
                   {{ WelcomeDaySun }}
                 </div>
                 <div class="time">
                   {{ WelcomeDaySunTime }}
+                </div>
+              </div>
+              <div>
+                <div class="text-lg">
+                  {{ WelcomeDayClosures }}
                 </div>
               </div>
             </div>
@@ -170,18 +175,19 @@ import {
   WelcomeHours,
   WelcomeDayMon,
   WelcomeDayMonTime,
-  WelcomeDayTue,
-  WelcomeDayTueTime,
-  WelcomeDayWed,
-  WelcomeDayWedTime,
-  WelcomeDayThu,
-  WelcomeDayThuTime,
-  WelcomeDayFri,
-  WelcomeDayFriTime,
+  // WelcomeDayTue,
+  // WelcomeDayTueTime,
+  // WelcomeDayWed,
+  // WelcomeDayWedTime,
+  // WelcomeDayThu,
+  // WelcomeDayThuTime,
+  // WelcomeDayFri,
+  // WelcomeDayFriTime,
   WelcomeDaySat,
-  WelcomeDaySatTime,
+  // WelcomeDaySatTime,
   WelcomeDaySun,
   WelcomeDaySunTime,
+  WelcomeDayClosures
 } from "../constants";
 </script>
 
@@ -198,16 +204,20 @@ import {
     border-radius: 8px 8px 0 0;
   }
 
-  .card-body,
+  .card-body {
+    background-color: var(--colors-content_bg);
+    padding: 10px 14px 4px 14px;
+  }
+
   .card-footer {
     background-color: var(--colors-content_bg);
-    padding: 6px 8px;
+    padding: 4px 14px 10px 14px;
   }
 
   .card-footer {
     border-radius: 0 0 8px 8px;
     display: flex;
-    font-size: 28px;
+    // font-size: 28px;
 
     a {
       margin-left: auto;

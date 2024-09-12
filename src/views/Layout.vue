@@ -1,18 +1,12 @@
 <template>
   <div :class="`layout ${generalStore.nav_collapsed ? 'nav_collapsed' : ''}`">
-    <div
-      :class="`bg_image ${generalStore.bg_image ? 'show' : ''}`"
-      :style="`background-image: url(${generalStore.bg_image});`"
-    ></div>
     <Navigation />
     <div class="content_wrapper">
-      <div class="content_pane">
-        <router-view :key="$route.fullPath" v-slot="{ Component }">
-          <transition name="fade" mode="out-in">
-            <component :is="Component" class="content_bg" />
-          </transition>
-        </router-view>
-      </div>
+      <router-view :key="$route.fullPath" v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" class="content_bg" />
+        </transition>
+      </router-view>
     </div>
   </div>
 </template>
@@ -36,60 +30,50 @@ const generalStore = useGeneralStore();
   transition: 100ms ease-in-out;
 }
 
-.bg_image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  background-position: center;
-  background-size: cover;
-}
-
 .show {
   opacity: 1;
 }
 
 .content_wrapper {
-  /* display: grid;
-  grid-template-rows: 50px 1fr;
-  grid-template-columns: 50px 1fr; */
-}
-
-.content_pane {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  position: relative;
-  height: 100%;
+  display: grid;
+  grid-template-columns: calc(100vw - 260px) 1fr; 
 }
 
 .content_bg {
   padding: 0px;
   overflow-y: auto;
+  overflow-x: hidden;
   height: 100vh;
   margin-bottom: 6px;
 }
 
 .nav_collapsed {
   grid-template-columns: 100px 1fr;
+  
+  .content_wrapper {
+    grid-template-columns: calc((100vw - 100px)) 1fr;
+  }
 }
+
 
 @media only screen and (max-width: 480px) {
   .layout {
     grid-template-rows: 60px 1fr;
     grid-template-columns: 1fr;
   }
-
+  
   .content_wrapper {
-    height: calc(100vh - 60px);
+    height: calc(100dvh - 60px);
+    grid-template-columns: auto 1fr;
+    // height: 100%;
+    // height: -webkit-fill-available;
   }
-
-  .content_pane {
+  
+  .content_bg {
+    height: -webkit-fill-available;
+    height: 100dvh;
+    // height: 100%;
   }
-
   
 }
 </style>

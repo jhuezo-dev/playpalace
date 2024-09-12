@@ -7,16 +7,16 @@
     />
     <div class="mb-6 px-4 pb-12 md:mx-6 md:px-6 lg:mx-8 lg:px-8">
       <div class="text-center my-6 relative">
-        <div class="text-6xl">{{ PricingTitle }}</div>
+        <div class="text-5xl md:text-6xl lg:text-6xl xl:text-6xl">{{ PricingTitle }}</div>
         <p
-          class="mt-0 py-6 line-height-5 font-bold text-2xl text-center mx-auto text-seconadry"
+          class="mt-0 pt-6 line-height-5 font-bold text-xl md:text-2xl lg:text-2xl xl:text-2xl text-center mx-auto text-seconadry"
           style="max-width: 500px"
         >
           {{PricingSubtitle}}
         </p>
       </div>
 
-      <div class="flex flex-column justify-center mx-auto w-full px-4 md:px-0 lg:px-0 lg:max-w-lg xl:max-w-3xl">
+      <div class="flex flex-col justify-center mx-auto w-full px-4 md:px-0 lg:px-0 lg:max-w-lg xl:max-w-3xl">
         <img src="../assets/Prices.jpg" alt="Play Palace Pricing list">
       </div>
     </div>
