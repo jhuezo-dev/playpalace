@@ -2,9 +2,9 @@
   <div class="relative">
     <div class="mb-6 px-4 pb-12">
       <div class="text-center my-6 relative">
-        <div class="text-6xl">{{ GalleryTitle }}</div>
+        <div class="text-5xl md:text-6xl lg:text-6xl xl:text-6xl">{{ GalleryTitle }}</div>
         <p
-          class="mt-0 py-6 line-height-5 font-bold text-2xl text-center mx-auto text-seconadry"
+          class="mt-0 py-6 line-height-5 font-bold text-xl md:text-2xl lg:text-2xl xl:text-2xl text-center mx-auto text-seconadry"
           style="max-width: 500px"
         >
           {{GallerySubtitle}}
