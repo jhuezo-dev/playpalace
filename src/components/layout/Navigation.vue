@@ -11,8 +11,9 @@
         >
           <svg-icon
             type="mdi"
-            :path="mobile_nav_menu_open ? mdiMenuUp : mdiMenuDown"
+            :path="mobile_nav_menu_open ? mdiMinus : mdiChessRook"
             :size="28"
+            style="color: var(--link-color);"
           ></svg-icon>
         </div>
 
@@ -99,6 +100,9 @@ import {
   mdiContactlessPayment,
   mdiViewGallery,
   mdiEmail,
+  mdiChessRook,
+  mdiMinus 
+
 } from "@mdi/js";
 
 const route = useRoute()
@@ -211,6 +215,7 @@ function closeMobileMenu() {
       width: 64px;
       margin-top: 10px;
       padding: 0;
+      border-radius: 10px;
     }
 
     .nav_wrapper {
@@ -279,21 +284,21 @@ function closeMobileMenu() {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
   .fullnavbar {
     .nav_card {
+      height: 100dvh;
+
       .nav_wrapper {
-        // margin-top: 8px;
-        // padding-top: 8px;
+
         width: -webkit-fit-available;
         width: inherit;
-        height: calc(100vh - 140px);
+        height: calc(100dvh - 140px);
         overflow-y: auto;
         
         .nav_items {   
-          background-color: red;
+          // background-color: red;
           padding: 12px 0;       
           align-items: center;
           overflow-y: auto;
-          overflow-x: hidden;
-          gap: 20px;
+          gap: 10px;
           width: inherit;
           height: inherit;
         }
@@ -345,24 +350,28 @@ function closeMobileMenu() {
 
       .logo_wrapper {
         height: 40px;
-        width: 40px;
+        width: 72px;
         margin: 0 0 0 10px;
+        border-radius: 10px;
       }
 
       .nav_wrapper {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         position: relative;
+        // position: fixed;
+        left: 38%;
 
         .mobile_nav_menu {
           display: flex;
           justify-content: center;
           align-items: center;
           color: var(--text-gray);
-          width: 30px;
-          height: 30px;
+          width: 40px;
+          height: 40px;
           background: var(--colors-almostlight);
-          border-radius: 100%;
+          border-radius: 10px;
+          z-index: 10;
         }
 
         .nav_items {
@@ -385,7 +394,7 @@ function closeMobileMenu() {
 
         .nav_link {
           justify-content: left;
-          padding-left: 25px;
+          padding-left: 10px;
           height: 40px !important;
 
           .icon {
