@@ -17,7 +17,29 @@
       </div>
 
       <div class="flex flex-col justify-center mx-auto w-full px-4 md:px-0 lg:px-0 lg:max-w-lg xl:max-w-3xl">
-        <img src="../assets/Prices.jpg" alt="Play Palace Pricing list">
+        <!-- individual prices  -->
+        
+        <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4 ">{{ PricesListedTitle }}</div>
+        <div class="flex justify-around gap-4 xs:flex-col md:flex-row lg:flex-row xl:flex-row bg-white p-4">
+          <div class="flex flex-col items-center">
+            <div class="text-xl md:text-2xl lg:text-2xl xl:text-2xl">{{ PriceHourTitle }}</div>
+            <div class="text-xl">{{ PriceHourPrice }}</div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="text-xl md:text-2xl lg:text-2xl xl:text-2xl">{{ PriceTwoHourTitle }}</div>
+            <div class="text-xl">{{ PriceTwoHourPrice }}</div>
+          </div>
+          <div class="flex flex-col items-center">
+            <div class="text-xl md:text-2xl lg:text-2xl xl:text-2xl">{{ PriceThreeHourTitle }}</div>
+            <div class="text-xl">{{ PriceThreeHourPrice }}</div>
+          </div>
+        </div>
+
+        <!-- package prices -->
+         <div class="flex flex-col mt-4">
+           <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4">{{ PricesPackagesTitle }}</div>
+           <img src="../assets/Prices.jpg" alt="Play Palace Pricing list">
+         </div>
       </div>
     </div>
     
@@ -25,7 +47,12 @@
 </template>
 
 <script setup>
-  import {PricingTitle, PricingSubtitle} from '../constants'
+  import {PricingTitle, PricingSubtitle, PricesListedTitle, PricesPackagesTitle, PriceHourTitle,
+PriceHourPrice,
+PriceTwoHourTitle,
+PriceTwoHourPrice,
+PriceThreeHourTitle,
+PriceThreeHourPrice} from '../constants'
 
 </script>
 
