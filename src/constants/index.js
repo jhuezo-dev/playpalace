@@ -37,6 +37,15 @@ export const AboutSubtitle = `We value your little ones safety so we have laid o
 /* Pricing page */
 export const PricingTitle = `Pricing Packages`
 export const PricingSubtitle = `For all your littles ones events, we have you covered`
+export const PricesListedTitle = `Pricing for Play Times `
+export const PricesPackagesTitle = `Pricing for Packages `
+export const PriceHourTitle = `1 Hour`
+export const PriceHourPrice = `$10`
+export const PriceTwoHourTitle = `2 Hours`
+export const PriceTwoHourPrice = `$18`
+export const PriceThreeHourTitle = `3 Hours`
+export const PriceThreeHourPrice = `$25`
+
 
 /* Gallery page */
 export const GalleryTitle = `Take a look into our Palace`
