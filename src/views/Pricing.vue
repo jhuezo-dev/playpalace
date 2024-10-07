@@ -19,8 +19,9 @@
       <div class="flex flex-col justify-center mx-auto w-full px-4 md:px-0 lg:px-0 lg:max-w-lg xl:max-w-3xl">
         <!-- individual prices  -->
         
-        <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4 ">{{ PricesListedTitle }}</div>
-        <div class="flex justify-around gap-4 xs:flex-col md:flex-row lg:flex-row xl:flex-row bg-white p-4">
+        <!-- <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4 ">{{ PricesListedTitle }}</div> -->
+        <img src="../assets/green-illustrated-zoo-ticket-pricing-graph.PNG" alt="">
+        <!-- <div class="flex justify-around gap-4 xs:flex-col md:flex-row lg:flex-row xl:flex-row bg-white p-4">
           <div class="flex flex-col items-center">
             <div class="text-xl md:text-2xl lg:text-2xl xl:text-2xl">{{ PriceHourTitle }}</div>
             <div class="text-xl">{{ PriceHourPrice }}</div>
@@ -33,12 +34,13 @@
             <div class="text-xl md:text-2xl lg:text-2xl xl:text-2xl">{{ PriceThreeHourTitle }}</div>
             <div class="text-xl">{{ PriceThreeHourPrice }}</div>
           </div>
-        </div>
+        </div> -->
 
+        <!-- <hr class="mt-4 solid"> -->
         <!-- package prices -->
          <div class="flex flex-col mt-4">
-           <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4">{{ PricesPackagesTitle }}</div>
-           <img src="../assets/Prices.jpg" alt="Play Palace Pricing list">
+           <!-- <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4">{{ PricesPackagesTitle }}</div> -->
+           <img src="../assets/updated-party-package.jpg" alt="Play Palace Pricing list">
          </div>
       </div>
     </div>
@@ -57,5 +59,7 @@ PriceThreeHourPrice} from '../constants'
 </script>
 
 <style lang="scss" scoped>
-
+hr.solid {
+  border-top: 1px solid #d1d1d1;
+}
 </style>
