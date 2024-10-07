@@ -20,6 +20,7 @@
           <img src="../assets/rules-cropped.png" alt="Play Palace Rules list">
           <img src="../assets/play-area-rules-cropped.png" alt="Play Palace play area rules">
           <img src="../assets/cleaning-cropped.png" alt="Play Palace Cleaning Protocol">
+          <img src="../assets/white-green-floral-classroom-rules-poster.PNG" alt="Updated Play palace rules">
       </div>
     </div>
     
