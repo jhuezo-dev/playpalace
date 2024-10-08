@@ -20,7 +20,7 @@
         <div :class="`nav_items ${mobile_nav_menu_open ? 'show_mobile_nav' : ''}`">
           <nav-item
             text="Welcome"
-            :path="`/welcome`"
+            :path="`/`"
             :active="['Welcome']"
             :collapsed="generalStore.nav_collapsed"
             @click="closeMobileMenu"

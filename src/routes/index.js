@@ -3,17 +3,13 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   // Public Routes
   {
-    path: "/",
-    redirect: "/layout"
-  },
-  {
     path: "/layout",
     name: "Layout",
-    redirect: '/welcome',
+    redirect: '/',
     component: () => import("../views/Layout.vue"),
     children: [
       {
-        path: '/welcome',
+        path: '/',
         name: 'Welcome',
         component: () => import("../views/Welcome.vue")
       },
@@ -36,6 +32,10 @@ const routes = [
         path: '/contact',
         name: 'Contact',
         component: () => import("../views/Contact.vue")
+      },
+      {
+        path: '/:catchAll(.*)',
+        redirect: '/'
       }
     ]
   },
