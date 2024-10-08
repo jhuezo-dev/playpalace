@@ -17,7 +17,7 @@ export const WelcomeDayMonTime = `10am-7pm*`
 export const WelcomeDaySat = `Sat`
 // export const WelcomeDaySatTime = `12am-12pm`
 export const WelcomeDaySun = `Sun`
-export const WelcomeDaySunTime = `12am-6pm*`
+export const WelcomeDaySunTime = `12pm-6pm*`
 export const WelcomeDayClosures = `*May be closed for private events`
 
 export const WelcomeCardOneLinkText = `Rules, safety, and sanitation`
@@ -37,8 +37,9 @@ export const AboutSubtitle = `We value your little ones safety so we have laid o
 /* Pricing page */
 export const PricingTitle = `Pricing Packages`
 export const PricingSubtitle = `For all your littles ones events, we have you covered`
-export const PricesListedTitle = `Pricing for Play Times `
-export const PricesPackagesTitle = `Pricing for Packages `
+export const PricesListedTitle = `Play Times `
+export const PricesAnimalTitle = `Animal rides`
+export const PricesPackagesTitle = `Party Packages `
 export const PriceHourTitle = `1 Hour`
 export const PriceHourPrice = `$10`
 export const PriceTwoHourTitle = `2 Hours`

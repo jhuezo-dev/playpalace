@@ -16,12 +16,11 @@
         </p>
       </div>
 
-      <div class="flex flex-col justify-center mx-auto w-full px-4 md:px-0 lg:px-0 lg:max-w-lg xl:max-w-3xl">
+      <div class="flex flex-col justify-center mt-4 items-center mx-auto w-full px-4 md:px-0 lg:px-0 lg:max-w-lg xl:max-w-3xl">
         <!-- individual prices  -->
         
-        <!-- <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4 ">{{ PricesListedTitle }}</div> -->
-        <img src="../assets/green-illustrated-zoo-ticket-pricing-graph.PNG" alt="">
-        <!-- <div class="flex justify-around gap-4 xs:flex-col md:flex-row lg:flex-row xl:flex-row bg-white p-4">
+        <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4 ">{{ PricesListedTitle }}</div>
+        <div class="flex justify-around gap-4 w-full xs:flex-col md:flex-row lg:flex-row xl:flex-row bg-white p-4">
           <div class="flex flex-col items-center">
             <div class="text-xl md:text-2xl lg:text-2xl xl:text-2xl">{{ PriceHourTitle }}</div>
             <div class="text-xl">{{ PriceHourPrice }}</div>
@@ -34,13 +33,18 @@
             <div class="text-xl md:text-2xl lg:text-2xl xl:text-2xl">{{ PriceThreeHourTitle }}</div>
             <div class="text-xl">{{ PriceThreeHourPrice }}</div>
           </div>
-        </div> -->
-
+        </div>
+        
+        <!-- animal rides prices -->
+        <div class="flex flex-col mt-4 items-center">
+          <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4">{{ PricesAnimalTitle }}</div>
+          <img src="../assets/green-illustrated-zoo-ticket-pricing-graph.PNG" alt="Animal rides prices">
+        </div>
         <!-- <hr class="mt-4 solid"> -->
         <!-- package prices -->
-         <div class="flex flex-col mt-4">
-           <!-- <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4">{{ PricesPackagesTitle }}</div> -->
-           <img src="../assets/updated-party-package.jpg" alt="Play Palace Pricing list">
+         <div class="flex flex-col mt-4 items-center w-full">
+           <div class="text-2xl md:text-3xl lg:text-3xl xl:text-3xl pb-2 md:pb-4 lg:pb-4 xl:pb-4">{{ PricesPackagesTitle }}</div>
+           <img src="../assets/updated-party-package.jpg" width="100%" height="100%" class="object-cover" alt="Play Palace Pricing list">
          </div>
       </div>
     </div>
@@ -49,7 +53,7 @@
 </template>
 
 <script setup>
-  import {PricingTitle, PricingSubtitle, PricesListedTitle, PricesPackagesTitle, PriceHourTitle,
+  import {PricingTitle, PricingSubtitle, PricesListedTitle, PricesAnimalTitle, PricesPackagesTitle, PriceHourTitle,
 PriceHourPrice,
 PriceTwoHourTitle,
 PriceTwoHourPrice,
